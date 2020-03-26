@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title> Sign In | Konnekt College - Your future starts here</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/fav/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/fav/site.webmanifest">
+    <link rel="mask-icon" href="/static/assets/fav/safari-pinned-tab.svg" color="#220859">
+    <meta name="msapplication-TileColor" content="#220859">
+    <meta name="theme-color" content="#220859">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/static/assets/css/bulma.css">
+    <link rel="stylesheet" href="/static/assets/css/app.css">
+    <link rel="stylesheet" href="/static/assets/css/core.css">
+    <link rel="stylesheet" href="/static/assets/css/custom.css">
+</head>
+
+<body class="is-white">
+
+    <!-- Pageloader -->
+    <!-- <div class="pageloader"></div>
+    <div class="infraloader is-active"></div> -->
+    <div class="login-wrapper">
+        
+        <!-- Main Wrapper -->
+        <div class="login-wrapper columns is-gapless">
+            <!--Left Side (Desktop Only)-->
+            <div class="column is-6 is-hidden-mobile hero-banner">
+                <div class="hero is-fullheight is-login">
+                    <div class="hero-body">
+                        <div class="container">
+                            <div class="left-caption">
+                                <h2 style="text-shadow: none;">Your future starts here</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Right Side-->
+            <div class="column is-6">
+                <div class="hero form-hero is-fullheight">
+                    <!--Logo-->
+                    <div class="logo-wrap">
+                        <div class="wrap-inner">
+                            <img src="/static/assets/img/school.svg" alt="">
+                        </div>
+                    </div>
+                    <!--Login Form-->
+                    <div class="hero-body">
+                        <div class="form-wrapper">
+                            <!--Avatar-->
+                            <!-- <div class="avatar">
+                                <div class="badge">
+                                    <i data-feather="check"></i>
+                                </div>
+                                <img src="https://placehold.it/128x128" data-demo-src="/static/assets/img/avatars/jenna.png" alt="">
+                            </div> -->
+                            <!--Form-->
+                            <div class="login-form">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input email-input" type="text" placeholder="kwadwo_sheldon@gmail.com">
+                                        <div class="input-icon">
+                                            <i data-feather="user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input password-input" type="password" placeholder="type password here">
+                                        <div class="input-icon">
+                                            <i data-feather="lock"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-solid primary-button raised is-rounded is-fullwidth">Sign in</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section signup">
+                                <div class="has-text-centered">
+                                    <a href="#">Create an account</a>
+                                </div>
+                            </div>
+                            <div class="section forgot-password" style="margin-top: -64px;">
+                                <div class="has-text-centered">
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add redirect jquery function on sign button click -->
+    <script>
+        $(document).ready(function (){
+            $(".btn-sign-in").click(function (e) {
+                e.preventDefault();
+                window.location = ""; //go to dashboard
+            });
+        });
+    </script>
+
+    <!-- Concatenated js plugins and jQuery -->
+    <script src="/static/assets/js/app.js"></script>
+    
+    <!-- Core js -->
+    <script src="/static/assets/data/tipuedrop_content.js"></script>
+    <script src="/static/assets/js/global.js"></script>
+    <script src="/static/assets/js/main.js"></script>
+</body>
+
+</html>
