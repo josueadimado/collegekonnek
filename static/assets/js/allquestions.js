@@ -8,7 +8,7 @@ var questions = [
 
 $('#submit').click(function() {
     $('#question').html(questions.pop());
-    $('#options').innerHTML +=`<!--Material Radio-->
+    $('#options').html(`<!--Material Radio-->
                                                 <label class="material-radio is-accent">
                                                     <input type="radio" name="group-demo1" >
                                                     <span class="dot"></span>
@@ -37,5 +37,9 @@ $('#submit').click(function() {
                                                     <input type="radio" name="group-demo1">
                                                     <span class="dot"></span>
                                                     <span class="radio-label">Love it</span>
-                                                </label>`
+                                                </label>`);
+
+    
 });
+
+$('#submit').show
