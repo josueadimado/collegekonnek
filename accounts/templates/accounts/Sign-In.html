@@ -29,9 +29,7 @@
 
 <body class="is-white">
 
-    <!-- Pageloader -->
-    <!-- <div class="pageloader"></div>
-    <div class="infraloader is-active"></div> -->
+    
     <div class="login-wrapper">
         
         <!-- Main Wrapper -->
@@ -87,13 +85,13 @@
                                 </div>
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-solid primary-button raised is-rounded is-fullwidth">Sign in</button>
+                                        <button class="button is-solid primary-button raised is-rounded is-fullwidth btn-sign-in">Sign in</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="section signup">
                                 <div class="has-text-centered">
-                                    <a href="#">Create an account</a>
+                                    <a href="/accounts/sign_up">Create an account</a>
                                 </div>
                             </div>
                             <div class="section forgot-password" style="margin-top: -64px;">
@@ -108,18 +106,20 @@
         </div>
     </div>
 
+    <!-- Concatenated js plugins and jQuery -->
+    <script src="/static/assets/js/app.js"></script>
+
     <!-- Add redirect jquery function on sign button click -->
     <script>
-        $(document).ready(function (){
+        $(document).ready(function () {
             $(".btn-sign-in").click(function (e) {
                 e.preventDefault();
-                window.location = ""; //go to dashboard
+                window.location = "/accounts/dashboard"; //go to dashboard
             });
         });
     </script>
 
-    <!-- Concatenated js plugins and jQuery -->
-    <script src="/static/assets/js/app.js"></script>
+
     
     <!-- Core js -->
     <script src="/static/assets/data/tipuedrop_content.js"></script>

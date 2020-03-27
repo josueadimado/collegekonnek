@@ -33221,7 +33221,7 @@ pre {
 
 /* line 94, src/assets/scss/pages/_app-signup.scss */
 .signup-wrapper .process-bar .progress-wrap .dot.is-second {
-    left: calc(25% - 19px)
+    left: calc(50% - 19px)
 }
 
 /* line 98, src/assets/scss/pages/_app-signup.scss */
