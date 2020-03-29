@@ -678,45 +678,11 @@
                         <div class="stats-wrapper">
                             <div class="stats-header">
                                 <div class="element-block">
-                                    <h3 style="font-family: 'Montserrat', sans-serif;font-weight: bold;font-size: 1.1rem;color: #393a4f;">Question</h3>
-                                    <p style="margin: 10px 0;font-size: .9rem;color: #999;">Would you like to:</p>
-                                    <p style="margin: 10px 0;font-size: .9rem;color: #999;" id="question">Analyze data using statistics</p>
-                                    <div class="ui-elements">
-                                        <div class="columns">
-                                            <div class="column is-12" id="options">
-                                                <!--Material Radio-->
-                                                <label class="material-radio is-accent">
-                                                    <input type="radio" name="group-demo1" >
-                                                    <span class="dot"></span>
-                                                    <span class="radio-label">Hate it</span>
-                                                </label>
-                                                <!--Material Radio-->
-                                                <label class="material-radio is-accent">
-                                                    <input type="radio" name="group-demo1">
-                                                    <span class="dot"></span>
-                                                    <span class="radio-label">Dislike it</span>
-                                                </label>
-                                                <!--Material Radio-->
-                                                <label class="material-radio is-accent">
-                                                    <input type="radio" name="group-demo1">
-                                                    <span class="dot"></span>
-                                                    <span class="radio-label">Neutral</span>
-                                                </label>
-                                                <!--Material Radio-->
-                                                <label class="material-radio is-accent">
-                                                    <input type="radio" name="group-demo1">
-                                                    <span class="dot"></span>
-                                                    <span class="radio-label">Like it</span>
-                                                </label>
-                                                <!--Material Radio-->
-                                                <label class="material-radio is-accent">
-                                                    <input type="radio" name="group-demo1">
-                                                    <span class="dot"></span>
-                                                    <span class="radio-label">Love it</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                            <a class="button is-rounded" id="submit">Submit</a>
+                                    <h3 style="font-family: 'Montserrat', sans-serif;font-weight: bold;font-size: 1.1rem;color: #393a4f;">Result</h3>
+                                    <p style="margin: 10px 0;font-size: .9rem;color: #999;" id="question">Base on your assessment, your career is:</p>
+                                    <img id="imageprofession" class="success-image" src="/static/assets/img/illustrations/signup/mailbox.svg" alt="">
+                                    <div class="success-text">
+                                        <h3 id="profession" style="font-weight: 500; color: chocolate;">Congratz, you successfully created your account.</h3>
                                     </div>
                                     
                                 </div>
@@ -754,6 +720,7 @@
     <script src="/static/assets/js/videos.js"></script>
     <script src="/static/assets/js/shop.js"></script>
     <script src="/static/assets/js/settings.js"></script>
+    <script src="/static/assets/js/result.js"></script>
     
     <!-- Components js -->
     <script src="/static/assets/js/widgets.js"></script>
