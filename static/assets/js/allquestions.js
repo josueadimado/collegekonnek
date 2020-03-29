@@ -1,6 +1,6 @@
 // Create an array for of questions
 var questions = [
-    'Analyze data using statistics?','Counsel people with drug or addiction?','Create art for sale and exhibition?','Direct the making of a movie?','Entertain an audience?','Estimate the value of items for an insurance policy?','Examine artifacts left behind by previous civilizations?','Find support resources for families in need ?','Help a client make business decisions?','Help elderly people complete their daily activities?','Help someone with disability get dressed?','Install drywall in houses?','Interpret the result of medical tests?','Investigate the causes of climate change?'
+    'Analyze data using statistics?','Counsel people with drug or addiction?','Create art for sale and exhibition?','Direct the making of a movie?','Entertain an audience?','Estimate the value of items for an insurance policy?','Examine artifacts left behind by previous civilizations?','Find support resources for families in need ?'
 ]
 
     // function results(){
