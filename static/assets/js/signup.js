@@ -22,14 +22,10 @@ $(document).ready(function () {
 
     if (stepValue == '0') {
       $('#signup-panel-1, #step-title-1').addClass('is-active');
-    } else if (stepValue == '25') {
-      $('#signup-panel-2, #step-title-2').addClass('is-active');
     } else if (stepValue == '50') {
-      $('#signup-panel-3, #step-title-3').addClass('is-active');
-    } else if (stepValue == '75') {
-      $('#signup-panel-4, #step-title-4').addClass('is-active');
+      $('#signup-panel-2, #step-title-2').addClass('is-active');
     } else if (stepValue == '100') {
-      $('#signup-panel-5, #step-title-5').addClass('is-active');
+      $('#signup-panel-3, #step-title-3').addClass('is-active');
     }
   });
   $('.process-button').on('click', function () {

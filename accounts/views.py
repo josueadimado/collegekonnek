@@ -8,3 +8,21 @@ def signin(request):
     template_name = 'accounts/Sign-In.html'
     args = {}
     return render(request,template_name,args)
+
+
+def signup(request):
+    template_name = 'accounts/Sign-Up.html'
+    args = {}
+    return render(request,template_name,args)
+
+
+def dashboard(request):
+    template_name = 'accounts/dashboard.html'
+    args = {}
+    return render(request,template_name,args)
+
+
+def questions(request):
+    template_name = 'accounts/questions.html'
+    args = {}
+    return render(request,template_name,args)
