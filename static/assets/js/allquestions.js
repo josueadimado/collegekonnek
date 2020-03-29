@@ -3,13 +3,14 @@ var questions = [
     'Analyze data using statistics','Counsel people with drug or addiction','Create art for sale and exhibition'
 ]
 
-    function results(){
-        window.open("https://vvu.edu.gh")
-    };
+    // function results(){
+    //     window.open("https://vvu.edu.gh")
+    // };
+
+var i = 0;
 
 $('#submit').click(function() {
-    for(var i = 0;i< questions.length;i++){
-        $('#question').html(questions.pop());
+        $('#question').html(questions[i]);
         $('#options').html(`<!--Material Radio-->
                                                     <label class="material-radio is-accent">
                                                         <input type="radio" name="group-demo1" >
@@ -40,10 +41,9 @@ $('#submit').click(function() {
                                                         <span class="dot"></span>
                                                         <span class="radio-label">Love it</span>
                                                     </label>`);
-
-    }
-
-    results();
-   
+        i++;
+        if(i === (questions.length)){
+             window:location.href = "/result"
+        }   
    
 });

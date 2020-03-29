@@ -26,3 +26,8 @@ def questions(request):
     template_name = 'accounts/questions.html'
     args = {}
     return render(request,template_name,args)
+
+def result(request):
+    template_name = 'accounts/result.html'
+    args = {}
+    return render(request,template_name,args)
