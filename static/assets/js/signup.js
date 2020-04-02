@@ -6,6 +6,41 @@
 Signup Process JS
 ========================================================================== */
 Dropzone.autoDiscover = false;
+axios.defaults.baseURL = window.location.origin;
+axios.defaults.headers.common['Accept']='application/json';
+function exists(ele) {
+    if (ele !== null && ele !== undefined) {
+        return true
+    } else {
+        return false
+    }
+}
+function collectForm(formid){
+        let myForm = document.getElementById(formid);
+        let formData = new FormData(myForm);
+        const info = {};
+        //This will build the form from name, value pairs
+        for(var pair of formData.entries()){
+            // console.log(pair[0]+','+ pair[1]);
+            info[pair[0]] = pair[1]
+        }
+        console.log(info)
+    axios.post('/collegekonnek-api/v1/accounts/create-user/', info)
+      .then(function (response) {
+        console.log(response);
+    //step should show after order creation is successful  
+    if(response.data.success){
+      $('#signup-panel-3, #step-title-3').addClass('is-active');
+      }else{
+        alert("There was an error signing up")
+      }
+      })
+      .catch(function (error) {
+        if (exists(error.response)){
+                  console.log(error.response.data)
+              }
+      });
+        }
 $(document).ready(function () {
   "use strict";
 
@@ -25,6 +60,7 @@ $(document).ready(function () {
     } else if (stepValue == '50') {
       $('#signup-panel-2, #step-title-2').addClass('is-active');
     } else if (stepValue == '100') {
+      collectForm('signup')
       $('#signup-panel-3, #step-title-3').addClass('is-active');
     }
   });

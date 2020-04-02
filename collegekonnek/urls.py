@@ -17,9 +17,15 @@ from django.contrib import admin
 from django.conf.urls import url,include
 from django.urls import path
 
+
+api_name = "collegekonnek-api"
+version = "v1"
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r"^$", include('accounts.urls')),
-    url(r"^", include('accounts.urls')),
+    url(r"^accounts/", include('accounts.urls')),
+    url(r"^{}/{}/accounts/".format(api_name,version), include('accounts.urls')),
 
 ]

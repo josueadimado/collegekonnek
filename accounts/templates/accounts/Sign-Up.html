@@ -86,37 +86,29 @@
                             </div>
                         </div>
                         <div class="column is-4">
-                            <!-- <div class="account-type">
-                                <img src="/static/assets/img/illustrations/signup/personal.svg" alt="">
-                                <h3>Personal</h3>
-                                <p>Create a company account to be able to do some awesome things.</p>
-                                <a class="button is-fullwidth is-rounded process-button" data-step="step-dot-2">
-                                    Continue
-                                </a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
                 
-                <form action="/sign-up" nonvalidate method="POST">
+                <form action="accounts/sign-up" id="signup" method="POST">
                 <div id="signup-panel-2" class="process-panel-wrap is-narrow">
                     <div class="form-panel">
                             <div class="field">
                                 <label>First Name</label>
                                 <div class="control">
-                                    <input type="text" class="input" placeholder="Enter your first name">
+                                    <input type="text" name="first_name" class="input" placeholder="Enter your first name">
                                 </div>
                             </div>
                             <div class="field">
                                 <label>Last Name</label>
                                 <div class="control">
-                                    <input type="text" class="input" placeholder="Enter your last name">
+                                    <input type="text" name="last_name" class="input" placeholder="Enter your last name">
                                 </div>
                             </div>
                             <div class="field">
                                 <label>Gender</label>
                                 <div class="control">
-                                    <select class="gender" style="margin-left: 8px;" name="" id="">
+                                    <select class="gender" name="gender" style="margin-left: 8px;" id="">
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
                                     </select>
@@ -125,26 +117,20 @@
                             <div class="field">
                                 <label>Email</label>
                                 <div class="control">
-                                    <input type="text" class="input" placeholder="Enter your email address">
+                                    <input type="email" name="email" class="input" placeholder="Enter your email address">
                                 </div>
                             </div>
                             <div class="field">
                                 <label>Password</label>
                                 <div class="control">
-                                    <input type="password" class="input" placeholder="Choose a password">
+                                    <input type="password" name="password" class="input" placeholder="Choose a password">
                                 </div>
                             </div>
-                            <!-- <div class="field">
-                                <label>Repeat Password</label>
-                                <div class="control">
-                                    <input type="password" class="input" placeholder="Repeat your password">
-                                </div>
-                            </div> -->
                     </div>
                 
                     <div class="buttons">
                         <a class="button is-rounded process-button" data-step="step-dot-1">Back</a>
-                        <a class="button is-rounded process-button is-next" data-step="step-dot-3">Next</a>
+                        <a class="button is-rounded process-button is-next" data-step="step-dot-3">Register</a>
                     </div>
                 </div>
                 </form>
@@ -157,7 +143,7 @@
                         <div class="success-text">
                             <h3>Congratz, you successfully created your account.</h3>
                             <p> We just sent you a confirmation email. PLease confirm your account within 24 hours.</p>
-                            <a id="signup-finish" class="button is-fullwidth is-rounded" href="/accounts/dashboard">Let Me In</a>
+                            <a id="signup-finish" class="button is-fullwidth is-rounded" href="/">Let Me In</a>
                         </div>
                     </div>
                 </div>
@@ -189,6 +175,8 @@
         </div> -->
     </div>
 
+
+   
     <!-- Concatenated js plugins and jQuery -->
     <script src="/static/assets/js/app.js"></script>
     
@@ -198,6 +186,8 @@
     <script src="/static/assets/js/main.js"></script>
     
     <!-- Page and UI related js -->
-    <script src="/static/assets/js/signup.js"></script></body>
+    <script src="https://gigship.pywe.org/static/js/axios.min.js"></script>
+    <script src="/static/assets/js/signup.js"></script>
+    </body>
 
 </html>
